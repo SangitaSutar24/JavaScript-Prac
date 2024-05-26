@@ -26,6 +26,33 @@ let myObj = {
 
 let myFunction = function(){
     console.log("hello world");
+    
+}
+console.log(myFunction);
+// console.log(typeof(myObj));
+
+//****************************** Stack & Heap *********************************//
+
+// stack - use in Primitive Data Type
+// Heap - use in Non - Primitive data Type
+
+let myHome = "Bhubaneswar"
+
+let myOffice = myHome
+myOffice = "Hyderabad"
+
+console.log(myHome);
+console.log(myOffice);
+
+
+let userOne = {
+    email : "abc@google.com",
+    upi : "abc@sbi"
 }
 
-console.log(typeof(myObj));
+let userTwo = userOne;
+
+userTwo.email = "efg@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
